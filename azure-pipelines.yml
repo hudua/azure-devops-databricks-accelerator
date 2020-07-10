@@ -37,9 +37,7 @@ steps:
   displayName: 'Configure DB Cli'
 
 - script: |
-    if databricks secrets create-scope --scope $(SECERET-SCOPE-NAME)
-    then echo "Secret scope successfully"
-    fi
+    databricks secrets create-scope --scope $(SECERET-SCOPE-NAME)
   displayName: 'Creating a secret scope'
 
 - script: databricks secrets list-scopes
