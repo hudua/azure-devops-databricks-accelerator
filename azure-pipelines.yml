@@ -15,7 +15,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-- group: keyvault_variable_group
+- group: New variable group 10-Jul
 
 steps:
 
